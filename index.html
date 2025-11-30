@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+     <link rel="stylesheet" href="styles.css"> 
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  </style>
+</head>
+<body>
+<button class="tablink" onclick="openPage('Home', this, 'gray')" id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage('About', this, 'gray')">About</button>
+<button class="tablink" onclick="openPage('Contact', this, 'gray')">Contact</button>
+
+
+<div id="Home" class="tabcontent">
+  <i class="fas fa-band-aid"></i>
+  <div id="header"><img src="Ikea Shark Poster.jpg" alt="Home photo"></div>
+   <h1>~Art and Design~</h1>
+   <p>Sharky works with businesses, creatives, and private clients to create remarkable graphics
+     and tell stories within a single product. Photography's my specialty.
+     <br> Check it out!</p>
+     
+    <br><br><br> <br><br>
+
+    <div class="Examples">
+
+      <div id="ex1">
+    <img src="blåhaj jaws parody poster.jpg" alt="poser">
+    <h2> Poster:</h2>
+    <h3>Description text: Praesent tincidunt sed tellus ut rutrum sed vitae justo.</h3>
+    </div>
+
+    <div id="ex2">
+      <img src="cup.jpg" alt="product">
+    <h2> Product design:</h2>
+    <h3>Description text: Praesent tincidunt sed tellus ut rutrum sed vitae justo.</h3>
+    </div>
+
+    <div id="ex3">
+      <img src="sushiphoto.JPG" alt="photo">
+    <h2> Photography:</h2>
+    <h3>Description text: Praesent tincidunt sed tellus ut rutrum sed vitae justo.</h3>
+    </div>
+
+    
+      <div id="ex1">
+    <img src="37 Beautiful Household Items Every Ocean Lover Needs.jpg" alt="Fashion">
+    <h2> Fashion:</h2>
+    <h3>Description text: Praesent tincidunt sed tellus ut rutrum sed vitae justo.</h3>
+    </div>
+
+    <div id="ex2">
+      <img src="Smart logos with hidden symbol - Shark.jpg" alt="logo">
+    <h2> Graphic design:</h2>
+    <h3>Description text: Praesent tincidunt sed tellus ut rutrum sed vitae justo.</h3> 
+    </div>
+  <p style="color: white;"><br>You found a secret!<br></p>
+    </div>
+
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h1>Get in touch</h1>
+   <div class="Contactinfo">
+      <label for="Name">Name:</label> <br>
+        <input type="text" id="Name" name="Name" size="50"><br><br>
+  <label for="mess">Message:</label> <br> 
+  <input type="text" id="mess" name="mess" size="50"><br><br>
+<button onclick="alert('Message sent!');">Submit</button>
+ </div>
+
+  <p>If you would like to find out more about Sharky, 
+    or if you would like to request a commission or addition about Sharky, 
+    please fill out this brief form, and Sharky will reply shortly when Sharky is available.
+  <br> ദ്ദി (ˉ͈̀꒳ˉ͈́ )✧ Thank you!
+<br><br>Or contact Sharky through social media:</p>
+    <a href="https://www.ikea.com/us/en/p/blahaj-soft-toy-shark-90373590/"><i class="fa fa-info-circle" aria-hidden="true"
+      style="font-size: 40px; margin-left: 32px; float: left; margin-top: 2px;" ></i></a>
+      <a href="https://www.facebook.com/IKEA/"><i class="fa fa-facebook-square" aria-hidden="true"
+      style="font-size: 40px; margin-left: 10px; float: left; margin-top: 2px;" ></i></a>
+       <a href="https://www.instagram.com/ikea_shark_official/"><i class="fa fa-instagram" aria-hidden="true"
+      style="font-size: 40px; margin-left: 10px; float: left; margin-top: 2px;" ></i></a>
+</div>
+
+<div id="About" class="tabcontent">
+  <h3>About</h3>
+  <h1>Something about Sharky</h1>
+  <p> <img src="IMG_2802.JPG">
+    This is Sharky, a high school shark who loves taking photos, making things and drawing. Some people say Sharky is a passionate duck, however Sharky thinks of themself as a friendly, talkative and a reliable Shark.
+As a grade 12 shark, Sharky has to apply for their dream university (which is near the pacific ocean). Sharky has already submitted their transcripts, however the university wants them to submit all of their extracurricular activities too(oh no). That is the reason why Sharky created this website, to show all of their extracurricular activities as well as their hobbies and personality.
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+ imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>
+<br><br><br><p></p>
+ </div> 
+  
+  <script>
+  function openPage(pageName, elmnt, color) {
+  // Hide all elements with class="tabcontent" by default */
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Remove the background color of all tablinks/buttons
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+
+  // Show the specific tab content
+  document.getElementById(pageName).style.display = "block";
+
+  // Add the specific color to the button used to open the tab content
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+  </script>
+</div>
+</body>
+</html>
