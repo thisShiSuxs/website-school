@@ -63,7 +63,7 @@ margin-left: 40px; margin-top: 100px;}
 #Home p{   width: 60%;   padding: 20px;   box-sizing: border-box; }
 #Home #header img{width: 730px;height: 380px;
   float: right;
-margin: 5px; padding-left: 8px; margin-right: 40px; margin-top: 30px;}
+margin: 5px; padding-left: 8px; margin-right: 40px; margin-top: 30px; margin-left: 5px;}
 
 
 .Examples img { height: 350px; width: 100%; float: none;}
