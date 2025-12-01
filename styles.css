@@ -6,7 +6,7 @@ body, html {
 
 /* Style tab links */
 .tablink {
-  background-color: #000000;
+  background-color: #442d98;
   color: white;
   float: left;
   border: none;
@@ -21,7 +21,7 @@ body, html {
     color: #000000;
 }
 .tablink:hover {
-  background-color: grey;
+  background-color: #6a53be;
 }
 
 /* Style the tab content (and add height:100% for full page content) */
@@ -67,11 +67,11 @@ margin: 5px; padding-left: 8px; margin-right: 40px; margin-top: 30px; margin-lef
 
 
 .Examples img { height: 350px; width: 100%; float: none;}
-.Examples h3 {color:grey; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+.Examples h3 {color:rgb(0, 0, 0); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
 .Examples h2{color: white; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
-#ex1 {  float: left; background-color: black;   width: 310px; margin-top: 30px; margin-right: 80px; margin-left: 30px; margin-bottom: 18px;}
-#ex2 {  float: left; background-color: black;   width: 310px; margin-top: 30px; margin-right: 80px; margin-left: 30px; margin-bottom: 18px;}
-#ex3 {  float: left; background-color:black;   width: 310px; margin-top: 30px; margin-left: 30px; margin-bottom: 18px;}
+#ex1 {  float: left; background-color: #6a53be;   width: 310px; margin-top: 30px; margin-right: 80px; margin-left: 30px; margin-bottom: 18px;}
+#ex2 {  float: left; background-color: #6a53be;   width: 310px; margin-top: 30px; margin-right: 80px; margin-left: 30px; margin-bottom: 18px;}
+#ex3 {  float: left; background-color:#6a53be;   width: 310px; margin-top: 30px; margin-left: 30px; margin-bottom: 18px;}
 
 
 i{float: left; color: #000000; 
